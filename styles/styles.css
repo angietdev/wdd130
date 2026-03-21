@@ -1,5 +1,6 @@
 nav {
-    background-color: darkblue;
+    margin: 1rem;
+    background-color: #66ccff;
     padding: 10px;
 }
 
@@ -10,14 +11,16 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: #66ccff;
+    margin: 1rem;
 }
 
 img {
     width: 150px;
     height: auto;
+    margin: 1rem;
     border: 1px solid black;
-    padding: 2px;
+    padding: 5px;
     box-shadow: 0 0 30px gray;
 }
 
@@ -32,9 +35,9 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 5px;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 30px gray;
 }
 
 aside {
