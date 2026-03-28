@@ -1,0 +1,134 @@
+/* rafting.css */
+
+:root {
+    --primary-color: #0b3c5d;
+    --secondary-color: #328cc1;
+    --accent-color: #d9b310;
+    --light-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--light-color);
+}
+
+header img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hero article img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+section img {
+    width: 150px;
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--light-color);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.socialmedia img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.adventure figure {
+    text-align: center;
+}
+
+.adventure img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
