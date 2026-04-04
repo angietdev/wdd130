@@ -63,6 +63,21 @@ section {
     width: min(800px, 100%);
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.history-content p {
+    text-align: justify;
+}
+
+.history-content img {
+    width: 100%;
+}
 
 code {
     font-family: 'Courier New', Courier, monospace;
