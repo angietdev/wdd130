@@ -54,7 +54,7 @@ header nav a {
     font-weight: bold;
     padding: 10px 20px;
     border: 1px solid #000;
-    background-color: #eee;
+    background-color: var(--accent-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -99,8 +99,7 @@ nav li:not(:last-child) a {
 .hero article img {
     width: 100px;
     order: 2;
-    margin-left: 15px;
-    margin-right: 0;
+    float: right;
 }
 
 section {
@@ -109,7 +108,7 @@ section {
 
 h2 {
     margin-bottom: 10px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -145,6 +144,20 @@ footer p {
     margin-left: 10px;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.adventure img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+
 .adventure {
     display: flex;
     justify-content: space-around;
@@ -154,33 +167,4 @@ footer p {
 
 .adventure figure {
     text-align: center;
-}
-
-.adventure img {
-    width: 150px;
-    height: auto;
-}
-
-.adventure img {
-    width: 150px;
-    height: 120px;
-    object-fit: cover;
-}
-
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
-    gap: 20px;
-    margin-top: 15px;
-}
-
-.history-content img {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 15px;
-}
-
-.history-content p {
-    text-align: justify;
 }
