@@ -58,14 +58,16 @@ nav li:not(:last-child) a {
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
     width: 100%;
     display: block;
+
 }
 
-.hero h1 {
+.about-title {
     position: absolute;
     top: 20px;
     left: 50%;
@@ -209,10 +211,8 @@ section img {
     align-items: center;
     gap: 6px;
     white-space: nowrap;
-    /* evita que el texto se parta */
 }
 
-/* ajuste fino del radio */
 .radio-group input[type="radio"] {
     margin: 0;
 }
@@ -288,4 +288,231 @@ footer p {
 
 .socialmedia img {
     width: 25px;
+}
+
+/*** INDEX PAGE ***/
+
+/* HERO HOME */
+.home-hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 140px;
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+    border-radius: 50% 50% 0 0;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+}
+
+.home-hero-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 2px;
+
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cta-button {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* CTA SECTION */
+.cta-section {
+    position: relative;
+    background-color: var(--accent-color);
+    text-align: center;
+
+    padding: 1rem;
+    width: 60%;
+    margin: -60px auto 1rem auto;
+
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section h2 {
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--light-color);
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 8px;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* GRID */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-item h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*** TRIPS PAGE ***/
+
+/* HERO TRIPS */
+.trips-hero {
+    position: relative;
+}
+
+.trips-hero img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* CTA */
+.trips-cta {
+    text-align: center;
+    background-color: var(--accent-color);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* GRID TRIPS */
+.trips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+.trip-card {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* TABLE */
+.trips-table-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trips-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: white;
 }
