@@ -240,28 +240,39 @@ section img {
 }
 
 /* EMPLOYEES */
-.employees {
-    border: 1px solid #ccc;
-    background-color: var(--light-color);
-    padding: 20px;
-    margin-top: 20px;
-}
-
 .employee-grid {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .employee-grid img {
     width: 120px;
     height: 120px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.employees h2 {
+.employee-grid figure {
     text-align: center;
-    width: 100%;
+    max-width: 200px;
+    flex: 1;
+}
+
+.employee-grid figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.employee-grid strong {
+    font-size: 1rem;
+}
+
+.employee-grid small {
+    display: block;
+    margin-top: 5px;
+    color: #555;
 }
 
 /* FOOTER */
