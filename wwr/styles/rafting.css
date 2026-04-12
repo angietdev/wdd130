@@ -85,7 +85,6 @@ nav li:not(:last-child) a {
     padding: 15px;
     display: flex;
     align-items: center;
-    float: right
 }
 
 .hero article img {
@@ -93,6 +92,7 @@ nav li:not(:last-child) a {
     order: 2;
     margin-left: 15px;
     margin-right: 0;
+    float: right
 }
 
 section {
