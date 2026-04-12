@@ -122,11 +122,6 @@ section img {
 
 .adventure img {
     width: 150px;
-    height: auto;
-}
-
-.adventure img {
-    width: 150px;
     height: 120px;
     object-fit: cover;
 }
