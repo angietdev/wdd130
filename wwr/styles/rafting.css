@@ -242,6 +242,7 @@ section img {
 /* EMPLOYEES */
 .employees {
     border: 1px solid #ccc;
+    background-color: var(--light-color);
     padding: 20px;
     margin-top: 20px;
 }
