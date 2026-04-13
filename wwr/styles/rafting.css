@@ -101,6 +101,11 @@ section {
     padding: 20px;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
 h2 {
     margin-bottom: 10px;
     color: var(--primary-color);
